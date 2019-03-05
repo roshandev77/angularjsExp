@@ -9,7 +9,7 @@ app.controller('parentController', ['$scope', function($scope) {
 app.directive('divDirective', ['$document', function() {
     return {
         restrict: 'E',
-        template: '<div class="outer" style="background-color:lightblue; width:300px; height:300px">this is div 3<div class="middle" style="background-color:red; width:200px; margin-left:26px; height:200px">this is dive 2<div class="inner" style="background-color:yellow; width:100px; margin-left:46px; height:100px">this is div 1</div></div></div><div class="message">message</div>',
+        template: '<div class="outer" style="background-color:lightblue; width:300px; height:300px; padding-top: 4px"><div class="middle" style="background-color:red; width:200px; margin-left:47px; margin-top: 32px; height:200px; padding-top: 30px"><div class="inner" style="background-color:yellow; width:100px; margin-left:50px; margin-top: 28px; height:100px"></div></div></div><div class="message">message</div>',
         link: function(scope, element, attr) {
             var divEventOuter = element[0].querySelector(".outer");
             var divEventMiddle = element[0].querySelector(".middle");
