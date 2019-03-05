@@ -16,7 +16,7 @@ app.directive('divDirective', ['$document', function() {
             var divEventInner = element[0].querySelector(".inner");
 
             angular.element(divEventOuter).on('click', function() {
-                console.log("Outer div is clicked");
+                // console.log("Outer div is clicked");
                 var outerDiv = element[0].querySelector(".message");
                 outerDiv.innerHTML = 'Outer div is clicked';
                 if (!e) var e = window.event;
@@ -24,7 +24,7 @@ app.directive('divDirective', ['$document', function() {
                 if (e.stopPropagation) e.stopPropagation();
             });
             angular.element(divEventMiddle).on('click', function() {
-                console.log("Middle div is clicked");
+                // console.log("Middle div is clicked");
                 var outerDiv = element[0].querySelector(".message");
                 outerDiv.innerHTML = 'Middle div is clicked';
                 if (!e) var e = window.event;
@@ -32,7 +32,7 @@ app.directive('divDirective', ['$document', function() {
                 if (e.stopPropagation) e.stopPropagation();
             });
             angular.element(divEventInner).on('click', function() {
-                console.log("Inner div is clicked");
+                // console.log("Inner div is clicked");
                 var outerDiv = element[0].querySelector(".message");
                 outerDiv.innerHTML = 'Inner div is clicked';
                 if (!e) var e = window.event;
